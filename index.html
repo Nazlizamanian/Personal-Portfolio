@@ -1,143 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio Website</title>
-    <link rel="stylesheet" href="public/css/styling.css">  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
+    <title>Nazli Zamanian Personal Portfolio</title>
+    <link rel="stylesheet" href="public/css/styling.css">
+</head> 
+
 <body>
-<div id="main">
-    <div>
-        <section class="parallax-container">
-            <h1>Nazli Zamanian Gustavsson </h1>
-            <h2>Computer Engineering Student</h2>
-      </section>
-  
-      <section class="buffer">
-        <div class="about" id="about-me">
-            <h3>About Me</h3>
+    <!-------------------------- Header Area -------------------------->
+    <header class="header-area">
+        <div class="container">
+            <div class="header">
+                <a href="" class="logo">
+                </a>
+                 
+                <ul class="navbar">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#education">Education and Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+        
+            </div>
+        </div> 
+    </header>
+ 
+    <!-------------------------- About-Me -------------------------->
+    <div class="FirstElement" id="about-me">
+        <div class="profile-photo">
+            <img src="public/img/photo!!.jpg" alt="profile picture">
+        </div>
+        <div class="profile-text">
+            <h1>Hi, Im Nazli</h1><br>
+            <h2 id="slash">Computer Engineering Student</h2>
             <p> I am a second-year computer engineering student with a diverse work background. 
                 I have always been captivated by technology's impact on our world, 
                 which led me to pursue computer engineering. In addition to my academic studies, 
-                I have gained valuable skills from various jobs, ranging from etail and restaurants to hospitality and everything inbetween. 
+                I have gained valuable skills from various jobs, ranging from retail and restaurants to hospitality and everything inbetween. 
                 These experiences have given me adaptability and problem-solving abilities that I bring to my computer engineering career.
                 <br>
-                I am currently searching for internship positions along with other professional opportunities in both front-end and back-end development,
-                additionally  junior-level positions in the field of cybersecurity! 
-            </p>
+                <br>
+                I am currently searching for an internship position along with other professional opportunities in both front-end and back-end development,
+                additionally junior-level positions in the fields of network engineering/cybersecurity! </p>
         </div>
-        <div id="education" class="column col-8 col-md-12">
-          <h3>Education</h3>
-            <div class="timeline">
-              <div class="container right">
-                <div class="content">
-                  <h4>Jönköping University / 2022-2025 Current</h4>
-                  <h5>Degree of Bachelor of Science in Computer Engineering with specialization in Software Engineering 
-                    and Mobile Platforms</h5>
-                  <p>The education is largely based on projects and exercises that provide practical experience in the techniques being taught.
-                    The program focuses on understanding how computers work and the structure of computer networks. In the early stages of the program the focuses lies on 
-                    understanding the basic fundamentals of computer science and mathematics. Following that, the program will dive deeper into mobile device 
-                    development, web development, computer networks, and systems. The programe includs learning in C and its derivatives such as C++, SQL database management systems, 
-                    algorithms and data structures, object-oriented programming principles, computer networking concepts, Windows operating systems, as well 
-                    as web technologies like HTML, CSS, and JavaScript.
-                    <br>
-                    <i class="fa-solid fa-link"></i>
-                    <a href="https://ju.se/studera/valj-utbildning/program/program-pa-grundniva/mjukvaruutveckling-och-mobila-plattformar.html">Jönköping University.se</a>
-                  </p>
-                </div>
-              </div>
-              <div class="container right">
-                <div class="content">
-                  <h4>EC Utbildning Yrkeshögskola / 2020-2022</h4>
-                  <p>Software development with a specialization in Industrial Internet Of
-                    Things (IoT).</p>
-                </div>
-              </div>
-              <div class="container right">
-                <div class="content">
-                  <h4>Internationella Engelska Gymnaiset Södermalm (IEGS) / 2017-2020</h4>
-                  <h5> High school degree in natural science programme with specialization
-                      in social science</h5>
-                 <p>The programme mainly focuses on research, analysis, 
-                  and communication skills in the context of natural sciences and mathematics and 
-                  interdisciplinary connections. It introduces core concepts, promotes scientific method 
-                  awareness, improves language proficiency for scientific communication, fosters the integration 
-                  of scientific elements, and encourages coherent knowledge integration in fields as biology, 
-                  chemistry, physics. Additionally the programme puts a signficant emphasis on social science as well. 
-                  <br>
-                  <i class="fa-solid fa-link"></i>
-                  <a href="https://www.engelskagymnasiet.se/academics/programmes/natural-science-specialisation-natural-science/">Internationella Engelska Gymansiet.se</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div id="experience">
-              <h3>Experience</h3>
-                <div class="timeline">
-                  <div class="container right">
-                    <div class="content">
-                      <h4>Salesman OKQ8, Stockholm / March 2021 – September 2022</h4>
-                      <p>Salesman at a gas service station. Varying job tasks from cleaning,
-                        taking care of customers. Additionally, car rental services and taking
-                        care of the different vehicles and trailers.</p>
-                        <br>
-                    </div>
-                  </div>
-                  <div class="container right">
-                    <div class="content">
-                      <h4>Caretaker Solom AB, Stockholm / January 2020 – August 2020</h4>
-                      <p>Caretaker at a special needs group home residence, providing assistance and support to residents.</p>
-                    </div>
-                  </div>
-                  <div class="container right">
-                    <div class="content">
-                      <h4>Assistant Floor Manager O'Learys Mall Of Scandinavia, Stockholm / April 2016– January 2020</h4>
-                      <p>Responsibilities consisted of arranging the resturants events, serving food and beverages, managing pentathlons and other games activities. 
-                          Responsible for smaller sections of the departments including the bar and event organizer ( 3-& 5 battles, bachelor’s and children’s parties) 
-                          Managed administrative functions for the day, served as the primary liaison between customers and employees, 
-                          utilizing the best judgement in tandem with the restaurants standards to resolve conflict that might have arose. 
-                          Maintained and executed routines site sanitation,supervising and furthermore.</p>
-                    </div>
-                  </div>
-                  <br>
-                </div>
-        </div>
-      </section>
-      <section class="parallax-container parallax-container2">
-        <div class="card">
-          <div class="card-img"></div>
-          <h3>Online Web Shop SQL</h3>
-          <p>
-            Online Web Shop created with SQL queries and ER diagram with 
-            both conceptual and logical diagram that has been
-            normalized to 3NF.
-          </p>
-          <a href="https://github.com/Nazlizamanian/OnlineWebShopDatabaseSQL">Learn more</a>
-        </div>
-        <div class="card">
-          <div class="card-img"></div>
-          <h3>Bank system</h3>
-          <p>
-            Simple bank programme that resemblance the nature and primary functions of an atm machine 
-            and fullfils the tasks that one can expect to be done at a visit to the bank.
-          </p>
-          <a href="banksystem.html">Learn more</a>
-        </div>
-      </section>
-
-      <footer class="buffer">
-        
-       
-      
-      </footer>
     </div>
+    <br>
+
+
+<!-------------- Education & Exeprience -------------->
+    <section class="education-content" id="education">
+        <div class="container">
+            <div class="row">
+                <div class="education ">
+                    <h3 class="title" id="slash">Education</h3>
+                    <div class="row">
+                        <div class="timeline-box">
+                            <div class="timeline">
+
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">
+                                        Jönköping University / 2022-2025 Current
+                                    </h3>
+                                    <h4 class="timeline-title">Degree of Bachelor of Science in Computer Engineering with specialization in Software Engineering 
+                                        and Mobile Platforms</h4>
+                                    <p class="timeline-text">The education is largely based on projects and exercises that provide practical experience in the techniques being taught.
+                                        The program focuses on understanding how computers work and the structure of computer networks. The focuses lies on 
+                                        understanding the basic fundamentals of computer science and mathematics. The program will dive deeper into mobile device 
+                                        development, web development, computer networks, and systems. The programe includs learning in C and its derivatives such as C++, SQL database management systems, 
+                                        algorithms and data structures, object-oriented programming principles, computer networking concepts, Windows operating systems, as well 
+                                        as web technologies like HTML, CSS, and JavaScript.
+                                        <br>
+                                        <i class="fa-solid fa-link"></i>
+                                        <a href="https://ju.se/studera/valj-utbildning/program/program-pa-grundniva/mjukvaruutveckling-och-mobila-plattformar.html">Jönköping University.se</a></p>
+                                   
+                                </div> 
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">EC Utbildning Yrkeshögskola / 2020-2022</h3>
+                                    <p class="timeline-text">Software development with a specialization in Industrial Internet Of
+                                        Things (IoT).</p>
+                                  
+                                </div>
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">
+                                        Internationella Engelska Gymnaiset Södermalm (IEGS) / 2017-2020
+                                    </h3>
+                                    <h4 class="timeline-title">High school degree in natural science programme with specialization
+                                        in social science</h4>
+                                        <p class="timeline-text">
+                                            The program primarily emphasizes research, analysis, and communication skills within the natural sciences, 
+                                            mathematics, and interdisciplinary connections. It introduces core concepts, enhances scientific method awareness, 
+                                            improves language proficiency for scientific communication, fosters the integration of scientific elements, and 
+                                            encourages cohesive knowledge integration in fields such as biology, chemistry, and physics. Additionally, 
+                                            the program places a significant emphasis on social sciences.
+                                            <br>
+                                            <i class="fa-solid fa-link"></i>
+                                            <a href="https://www.engelskagymnasiet.se/academics/programmes/natural-science-specialisation-natural-science/">Internationella Engelska Gymansiet.se</a>
+                                            </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="experience">
+                    <h3 class="title" id="slash">Experience</h3>
+                    <div class="row">
+                        <div class="timeline-box">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">
+                                        Job & Talent Recruitment agency, Stockholm / Juny 2023 – Current
+                                    </h3>
+                                    <p class="timeline-text">
+                                        Salesman at a gas service station. Varying job tasks from cleaning, taking care
+                                        of customers. Additionally, car rental services and taking care of different vehicles
+                                        and trailers.
+                                    </p>
+                                </div> 
+                                
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">
+                                        Salesman OKQ8, Stockholm / March 2021 – September 2022
+                                    </h3>
+                                    <p class="timeline-text">
+                                        Salesman at a gas service station. Varying job tasks from cleaning, taking care
+                                        of customers. Additionally, car rental services and taking care of different vehicles
+                                        and trailers.
+                                    </p>
+                                </div> 
+                                <!-- Timeline-item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-title">Caretaker Solom AB, Stockholm / January 2020 – August 2020</h3>
+                                    <p class="timeline-text">
+                                        In my role as a caretaker at a specialized group home residence for individuals with special needs. 
+                                        This entails a range of responsibilities, encompassing but not limited to, addressing the unique and specific 
+                                        needs of each resident, ensuring their well-being, and fostering an environment that promotes their physical and 
+                                        emotional comfort and security. 
+                                    </p> 
+                                </div>
+                                    <!-- Timeline-item -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-title">Assistant Floor Manager O'Learys Mall Of Scandinavia, Stockholm / April 2016– January 2020</h3>
+                                        <p class="timeline-text">
+                                            Responsibilities consisted of arranging the resturants events, serving food and beverages, managing pentathlons and other games activities. 
+                                            Responsible for smaller sections of the departments including the bar and event organizer.
+                                            Managed administrative functions for the day, served as the primary liaison between customers and employees, 
+                                            utilizing the best judgement in tandem with the restaurants standards to resolve conflict that might have arose. 
+                                            Maintained and executed routines site sanitation,supervising and furthermore.</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+
+    <!-------------------------- Projects -------------------------->
+    <section class="project-content" id="projects">
+        <div class="container">
+            <div class="project-title">
+                <h4>My Projects</h4>
+                <p>My most recent projects!</p>
+            </div>
+            <div class="projects">
+                <!-- 1st Project -->
+                <div class="project">
+                    <h4>Online Webshop SQL Database</h4>
+                    <p>Online Web Shop created with SQL queries and ER diagram with both conceptual and logical diagram that has been normalized to 3NF.
+                    <br>
+                    <a href="https://github.com/Nazlizamanian/OnlineWebShopDatabaseSQL">Learn more</a>
+                    </p>
+                </div>
+                 <!-- 2nd Project -->
+                 <div class="project">
+                    <h4>Caesar Cipher Encryption Java</h4>
+                    <p>A classic Java encryption technique that shifts message characters by a fixed number of positions to create secret codes, illustrating fundamental data encryption principles.
+                        <br> 
+                        <a href="https://github.com/Nazlizamanian/Object-oriented-Software-Development-with-Design-Patterns/tree/main/Labbar/Lab03-MVC%20application">Learn more</a>
+                    </p>
+                </div>
+                <!-- 3rd Project -->
+                <div class="project">
+                    <h4>Portfolio Website</h4>
+                    <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to introduce myself, share my projects, and provide information about my  education and internship.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
   
-</div>
-</div>
+    <!-------------------------- Footer section -------------------------->
+   <footer class="footer">
+    <div class="social">
+        <a href="mailto:nazlizamanian@gmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="https://github.com/Nazlizamanian"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nazlizamanian/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+   </footer>
 </body>
 </html>
