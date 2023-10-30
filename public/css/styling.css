@@ -131,7 +131,7 @@ profile-photo .img{
 }
 .profile-text p{
   color: black;
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 20px;
 }
 .profile-text{
@@ -211,7 +211,7 @@ profile-photo .img{
   margin-top: 15px;
 } 
 .education-content  h3.title{
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 10px;
   font-weight: 600;
 }
@@ -265,17 +265,17 @@ profile-photo .img{
 }
 .education-content .row .timeline-title  {
   background-color: pink;
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 10px;
 }
 .education-content .row .experience .timeline-title h4  {
-  font-size: 18px;
+  font-size: 19px;
   margin-bottom: 8px;
   
 }
 .education-content .row .timeline-text{
   line-height: 23px;
-  font-size: 16px;
+  font-size: 17px;
   background-color: pink;
   
 }
