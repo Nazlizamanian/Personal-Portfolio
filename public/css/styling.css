@@ -1,757 +1,452 @@
-:root {
-    --color: pink;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+  background-color: rgb(275,212,223);
+  color: black;
+}
+a{
+  text-decoration: none ;
+  color:black;
+  transition:0.3s; 
+}
+
+ul{
+  list-style:none;
+}
+img{
+  max-width: 100%;
+}
+body{
+  font-family: 'verdana';
+  font-size:16px;
+  line-height:24px; 
+  background-color: rgb(275,212,223);
+}
+#slash{
+  font-size: 30px;
+  line-height: 40px;
+  font-style: italic;
+  font-family:'Brush Script MT';
+  margin-bottom: 20px;
+  font-weight: 1300;
+}
+.education #slash, .experience #slash {
+  font-size: 60px;
+}
+.container{
+  width: 1170px;
+  margin:auto;
+}
+
+/*---------------------------Header---------------------------*/
+
+.header-area{
+  padding:20px 0;
+  transition: padding .3s;
+}
+
+.header-area.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: rgb(275,212,223);
+  padding: 5px;
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-bottom: 2rem; */
+} 
+.logo {
+  display: flex;
+  align-items: center;
+  position: relative; 
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.logo .fa-bolt {
+  color: lightcoral;
+  font-size: 19.5px;
+  position: absolute; 
+  top: 60%;
+  left: 100%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1; 
+}
+
+.header ul li:first-child {
+  margin-right: auto; 
+}  
+
+.header ul{
+  display: flex;
+  align-items: center; 
+}
+.header ul li{
+  margin: 0 15px;
+}
+.header ul li a{
+  text-transform: capitalize;
+  display: block;
+}
+.header ul li a.active{
+  color: lightcoral;
+} 
+.header ul li a:hover{
+  color:lightcoral;
+}
+.header .menu_icon{
+  color:black;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+
+/*---------------------------HomePage--------------------------*/
+.FirstElement{
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   padding-top: 5rem; 
+} 
+
+.FirstElement.adjusted-padding {
+  padding-top: 40px; 
+}
+
+.FirstElement .profile-photo{
+  width: 300px;
+  height:  300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 15px solid pink;
+  box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5)
+}
+profile-photo .img{
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.profile-text{
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-text h1{
+  color: black;
+  font-size: 3rem; 
+}
+.profile-text p{
+  color: black;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.profile-text{
+  color: black;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+
+ /*---------------------------About---------------------------*/
+
+.about-area{
+  padding-top: 130px;
+  background-color: rgb(275,212,223);
+}
+.about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:50px;
+}
+.about-content {
+  flex-basis: 90%;
+  display: flex; 
+  justify-content: center; /* Center horizontally */
+  align-items: center; 
+}
+.about-content h4{
+  color: lightcoral;
+  font-size: 40px;
+  line-height: 70px;
+}
+
+.about-content ul {
+  color:#fff;
+  text-align: justify;
+}
+
+.about-content ul li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
+
+/*---------------------------Button---------------------------*/
+
+.btn-group{
+  margin: 40px 0;
+}
+.btn-group .btn{
+  color: #fff;
+  padding:12px 20px;
+  margin: 5px 0;
+  margin-right: 7px;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+.btn.active{
+  border-color: lightcoral;
+}
+
+
+/*---------------------------Education & Experience ---------------------------*/
+
+.education-content .row{
+  display: flex;
+  border-radius: 5px;
+  height: 700px;
+  margin-bottom: 350px;
+  margin-right: 6px;
+}
+
+.education-content .title{
+  background-color: rgb(275,212,223);
+}
+.education-content .row .education,
+.education-content .row .experience
+{
+  flex:0 0 50%;
+  max-width: 50%;
+  margin-top: 15px;
+} 
+.education-content  h3.title{
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.education-content .row.timeline-box{
+  flex:0 0 100%;
+  max-width: 100%;  
+  background-color: pink;
+}
+.education-content .row .timeline{
+  padding: 20px 10px;
+  background-color: pink;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+.education-content .row .timeline-item{
+  position:relative;
+  padding-left: 30px;
+  padding-bottom: 30px; 
+  background-color: pink;
+}
+.education-content .row  .experience .timeline-item{
+  position:relative;
+  padding-left: 37px;
+  padding-bottom: 30px; 
+  background-color: pink;
+}
+.education-content .row .timeline-item:last-child{
+  padding-bottom: 0;
+  background-color: pink;
+}
+.education-content .row .timeline-item::before{
+  content: "";
+  width: 2px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: #fff;  
+}
+.education-content .row .circle-dot{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px #fff;
+  background-color: #fff;
+}
+.education-content .row .timeline-title  {
+  background-color: pink;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.education-content .row .experience .timeline-title h4  {
+  font-size: 18px;
+  margin-bottom: 8px;
   
-  }
+}
+.education-content .row .timeline-text{
+  line-height: 25px;
+  font-size: 16px;
+  background-color: pink;
+  text-align: justify;
+}
+
+/*---------------------------Projects---------------------------*/
+.project-content{
+  padding: 90px 0;
+
+}
+.project-title{
+  margin-bottom: 60px;
+  text-align: center;
   
-  body {
-    font-family: Verdana;
-    background-color: pink;
+}
+.project-title h4{
+  font-size: 60px;
+  line-height: 40px;
+  font-style: italic;
+  font-family:'Brush Script MT';
+  margin-bottom: 20px;
+  font-weight: 1300;
+}
+.project-title p{
+  color: black;
+  
+}
+.projects{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.project{
+    /* padding: 30px 15px; */
     color: black;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    font-weight: 700;
-  
-  }
-  
-  h2 {
-    font-size: 50px;
-    font-family: Brush Script MT;
-    font-style: italic;
-  }
-  
-  h3 {
-    font-size: 40px;
-    font-family: Verdana;
-    padding-top: 20vh;
-  }
-  
-  li,
-  p {
-    line-height: 1.8em;
-    max-width: 52ch;
-    padding: 1em;
-  }
-  
-  a:hover {
-    color: black;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  
-  .header {
+    border-radius: 10px;
+    width: 100%;
     position: relative;
+    padding: 25px;
     text-align: center;
-  }
+    flex-basis: 32%;
+    transition: .3s;
+    background-color: pink;
+}
+
+.project h4{
+  font-size: 26px;
+  text-transform: capitalize;
+  margin: 20px 0;
+  background-color: pink;
   
-  
-  /* Header styles */
-  header {
-    background-color: rgb(255, 192, 203);
-    color: #fff;
-    padding: 10px;
+}
+.project p{
+  text-align: justify;
+  background-color: pink;
+}
+
+.project:hover{
+  transform: scale(1.1);
+}
+
+/*---------------------------Footer---------------------------*/
+.footer {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 15px 0 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-  }
-  
-  
-  /* Navigation styles */
-  nav {
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin-bottom: 10px;
-    margin-top: -20px;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s;
-    margin-bottom: 10px;
-    background-color: rgb(255, 192, 203);
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  nav ul li a:hover {
-    color: black;
   }
  
-  a {
-    color: #333;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 15px 0;
+
+ /*------------------- Responsive Design on small screen -------------------*/
+
+/* Medium layout */
+@media only screen and (min-width:1000px) and (max-width:1200px){
+  .container{
+    width: 970px;
   }
-  
-  button {
-    border-radius: 20px;
-    border: 1px solid pink;
-    background-color: pink;
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 12px 45px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+}
+
+@media(max-width:1050px){
+  .FirstElement{ 
+    flex-direction: column;
+    padding-top: 2rem;
   }
-  
-  button:hover {
+  .profile-text{
+    padding: 40px 0px;
+  }
+}
+
+
+
+/* tablet layout */
+@media only screen and (min-width:768px) and (max-width:999px){
+  .container{
+    width: 750px;
+  } 
+}  
+
+
+/* Mobile Layout */
+@media only screen and (max-width:767px){
+  .container{
+    width: 350px;
+  }
+
+  .header .menu_icon {
+    display: block;
+  }
+  .header ul{
+    display: none;
+  }
+  .header i{
     color: black;
   }
-  
 
-  .btn-project{
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
+  .profile-text{
+    width: 350px;
   }
-  
-  form {
-    background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .FirstElement .profile-text p{
+    text-align: justify;
+  }
+  .about{
     flex-direction: column;
-    padding: 0 50px;
-    height: 100%;
-    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: 30px;
   }
-  
-  input {
-    background-color: #eee;
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
+  .about-skills{
     width: 100%;
-    text-align: center;
+    margin-top: 30px;
   }
-  
-  .form-container {
-    position: relative;
-    top: 10%;
-    left: 50%;
+  .education-content .row {
+    flex-direction: column;
     height: auto;
-  }
-  
-  .input-box{
-    width:270px;
-  }
-  
-  /* Section styles */
-  .section {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-  }
-  
-  .section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  /* Flexbox grid styles */
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .grid-item {
-    flex: 1;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-  }
-  
-  .parallax-container {
-    display: flex;
-    min-height: 80vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-attachment: fixed;
-    background-image: url('../img/pinkbomb.jpg');
-    background-position: center;
-    background-size: cover;
-    color: var(--color);
-    row-gap: 2rem;
-    text-align: center;
-  }
-  
-  .parallax-container h1,
-  h2 {
-    color: black;
-  }
-  
-  .buffer {
-    width: 100%;
-    min-height: 50vh;
-    background-color: var(--color);
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: pink;
-  }
-  
-  .buffer #about-me h3 {
-    margin-bottom: 10px;
-  }
-  
-  #education {
-    text-align: center;
-  }
-  
-  #experience {
-    width: 100%;
-  }
-  
-  .parallax-container2 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 2rem;
-    background-image: url("../img/pastel.jpg");
-    gap: 2em;
-  }
-  
-  .parallax-container2 .portfolio {
-    text-align: center;
-    color: black;
-    flex-direction: column;
-    order: 1;
-  }
-  
-  a {
-    display: inline-block;
-    padding: 1em 3.5em;
-    border-radius: 0.3em;
-    background-color: var(--color);
-    color: white;
-    font-size: 0.875rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    text-transform: uppercase;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card {
-    display: flex;
-    max-width: 320px;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 1rem;
-    border-radius: 0.5em;
-    background-color: white;
-    box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
-    order: 2;
-  }
-  
-  /*Project-pages */
-  .project-card {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .project {
-    max-width: 220vw;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(255, 192, 203);
-    border-radius: 5%;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
-    margin: auto;
-    text-align: center;
-  }
-  
-  .project-card .project p {
-    text-align: center;
-  }
-  
-  .card-img {
-    width: 100%;
-    height: 200px;
-    border-radius: 0.3em;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .card-img h3 {
-    padding: 2px;
-  }
-  
-  .card:nth-of-type(1) .card-img {
-    background-image: url('../img/onlineweb.jpg');
-  }
-  
-  .card:nth-of-type(2) .card-img {
-    background-image: url('../img/bankpicture.jpg');
-    /*Source website: https://www.vectorstock.com/royalty-free-vector/icons-for-the-banking-system-vector-20983306*/
-  }
-  
-  .parallax-container2 .card h3 {
-    padding: 2px;
-  }
-  
-  
-  /*Skills circle*/
-  .wrapper {
-    width: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .wrapper .card {
-    background: rgb(255, 192, 203);
-    width: calc(25% - 20px);
-    height: 50vh;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-  }
-  
-  .wrapper .card .circle {
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    cursor: default;
-  }
-  
-  .card .circle .box,
-  .card .circle .box span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-  
-  .card .circle .box {
-    height: 100%;
-    width: 100%;
-    background: rgb(255, 192, 203);
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(0.8);
-    transition: all 0.2s;
-  }
-  
-  .card .circle .box span,
-  .wrapper .card .text {
-    background: lightcoral;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .circle .box span {
-    font-size: 38px;
-    font-weight: 600;
-    transform: translate(-45%, -45%);
-    transition: all 0.1s;
-  }
-  
-  .card .text {
-    font-size: 20px;
-    font-weight: 600;
-  }
-  
-  .buffer .about h4 {
-    font-family: Brush Script MT;
-    margin-bottom: 40px;
-    font-size: 40px;
-  }
-  
-  /* Timeline the actual timeline (the vertical ruler) */
-  .timeline {
-    position: relative;
-    max-width: 1200vw;
-    margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 20%;
-    margin-left: -3px;
-    margin-bottom: 23px;
-    height: 205vh;
-  }
-  
-  #experience .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 20%;
-    margin-left: -3px;
-    margin-bottom: 23px;
-    height: 130vh;
-  }
-  
-  /* Container around content */
-  .container {
-    padding: 4px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 60%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: -10px;
-    background-color: white;
-    border: 4px solid #fff;
-    top: -2px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px 2px #fff;
-  }
-  
-  /* Place the container to the right */
-  .right {
-    left: 83px;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  
-  .right::after {
-    left: -60px;
-  }
-  
-  .content {
-    padding: 4px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 10px;
-  }
-  
-   /*Responsivness
-   @media(max-width: 753px) {
-    .wrapper {
-      max-width: 700px;
-    }
-  
-    .wrapper .card {
-      width: calc(50% - 20px);
-      margin-bottom: 20px;
-    }
-  }
-  
-  @media(max-width: 505px) {
-    .wrapper {
-      max-width: 500px;
-    }
-  
-    .wrapper .card {
-      width: 100%;
-    }
-  }*/
-
-/* Responsive adjustments for smaller screens */
-@media screen and (max-width: 768px) {
-    body {
-      font-size: 16px; 
-    }
-  
-    .parallax-container h1, .parallax-container h2 {
-      font-size: 2rem;
-    }
-  
-    .section h2 {
-      font-size: 18px;
-    }
-    .timeline::after {
-        left: 2px;
-        margin-left: -3px;
-        margin-bottom: 23px;
-        height: 445vh;
-      }
-
-    #experience .timeline::after  {
-        content: '';
-        position: absolute;
-        width: 6px;
-        background-color: white;
-        top: 0;
-        bottom: 0;
-        left: 2px;
-        margin-left: -3px;
-        margin-bottom: 23px;
-        height: 275vh;
-      }
-    .container {
-        padding: 30px 40px;
-        position: relative;
-        background-color: inherit;
-        width: 60%;
-      }
-  
-    .wrapper {
-      width: 100%;
-      flex-wrap: wrap;
-      padding: 10px;
-    }
-  
-    .wrapper .card {
-      width: 100%;
-      margin: 10px 0;
-    }
-  
-    .right {
-      left: 10px;
-    }
-  
-    .right::before {
-      left: 10px;
-    }
-  
-    .right::after {
-      left: -30px;
-    }
-  
-    .container {
-      width: 90%;
-      left: 10px;
-    }
-  }
-  
-  /* Further adjustments for smaller screens (e.g., mobile devices) */
-  @media screen and (max-width: 480px) {
-    .parallax-container h1, .parallax-container h2 {
-      font-size: 2rem;
-    }
-  
-    .section h2 {
-      font-size: 16px;
-    }
-  
-    .grid-item {
-      flex: 1;
-      width: 100%;
-      margin: 10px 0;
-    }
-  
-    .buffer #about-me h3 {
-      padding-top: 10vh;
-    }
-    .timeline {
-        position: relative;
-        max-width: 700px;
-        margin: 0 auto;
-      }
-      
-      /* The actual timeline (the vertical ruler) */
-      .timeline::after {
-        content: '';
-        position: absolute;
-        width: 6px;
-        background-color: white;
-        top: 0;
-        bottom: 0;
-        left: 6%;
-        margin-left: -3px;
-        margin-bottom: 23px;
-        height: 484vh;
-      }
-      
-      #experience .timeline::after {
-        content: '';
-        position: absolute;
-        width: 6px;
-        background-color: white;
-        top: 0;
-        bottom: 0;
-        left: 6%;
-        margin-left: -3px;
-        margin-bottom: 23px;
-        height: 292vh;
-      }
-      
-      /* Container around content */
-      .container {
-        padding: 4px 40px;
-        position: relative;
-        background-color: inherit;
-        width: 75%;
-      }
-      
-      /* The circles on the timeline */
-      .container::after {
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        right: 10px;
-        background-color: white;
-        border: 4px solid #fff;
-        top: -2px;
-        border-radius: 50%;
-        box-shadow: 0 0 10px 2px #fff;
-      }
-      
-      /* Place the container to the right */
-      .right {
-        left: 30px;
-      }
-      
-      /* Add arrows to the right container (pointing left) */
-      .right::before {
-        content: " ";
-        height: 0;
-        position: absolute;
-        top: 16px;
-        width: 0;
-        left: 30px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-      }
-      
-      .right::after {
-        left: -8vw;
-      }
-  }
-  @media screen and (min-width: 481px) and (max-width: 600px) {
-  .parallax-container h1, .parallax-container h2 {
-    font-size: 2rem;
+    margin-bottom: 50px;
   }
 
-  .section h2 {
-    font-size: 16px;
+  .education-content .row .education,
+  .education-content .row .experience {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .project{
+    flex-basis: 100%;
+    margin-bottom: 30px;
   }
 
-  .grid-item {
-    flex: 1;
-    width: 100%;
-    margin: 10px 0;
-  }
+}
 
-  .buffer #about-me h3 {
-    padding-top: 10vh;
-  }
-  .timeline {
-      position: relative;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    
-    /* The actual timeline (the vertical ruler) */
-    .timeline::after {
-      content: '';
-      position: absolute;
-      width: 6px;
-      background-color: white;
-      top: 0;
-      bottom: 0;
-      left: 6%;
-      margin-left: -3px;
-      margin-bottom: 23px;
-      height: 484vh;
-    }
-    
-    #experience .timeline::after {
-      content: '';
-      position: absolute;
-      width: 6px;
-      background-color: white;
-      top: 0;
-      bottom: 0;
-      left: 6%;
-      margin-left: -3px;
-      margin-bottom: 23px;
-      height: 292vh;
-    }
-    
-    /* Container around content */
-    .container {
-      padding: 4px 40px;
-      position: relative;
-      background-color: inherit;
-      width: 75%;
-    }
-    
-    /* The circles on the timeline */
-    .container::after {
-      content: '';
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      right: 10px;
-      background-color: white;
-      border: 4px solid #fff;
-      top: -2px;
-      border-radius: 50%;
-      box-shadow: 0 0 10px 2px #fff;
-    }
-    
-    /* Place the container to the right */
-    .right {
-      left: 30px;
-    }
-    
-    /* Add arrows to the right container (pointing left) */
-    .right::before {
-      content: " ";
-      height: 0;
-      position: absolute;
-      top: 16px;
-      width: 0;
-      left: 30px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
-    
-    .right::after {
-      left: -8vw;
-    }
-  }
-  
