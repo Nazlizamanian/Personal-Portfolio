@@ -144,7 +144,6 @@ profile-photo .img{
 }
 
  /*---------------------------About---------------------------*/
-
 .about-area{
   padding-top: 130px;
   background-color: rgb(275,212,223);
@@ -179,7 +178,6 @@ profile-photo .img{
 
 
 /*---------------------------Button---------------------------*/
-
 .btn-group{
   margin: 40px 0;
 }
@@ -197,7 +195,6 @@ profile-photo .img{
 
 
 /*---------------------------Education & Experience ---------------------------*/
-
 .education-content .row{
   display: flex;
   border-radius: 5px;
@@ -209,8 +206,7 @@ profile-photo .img{
 .education-content .title{
   background-color: rgb(275,212,223);
 }
-.education-content .row .education,
-.education-content .row .experience
+.education-content .row .education, .education-content .row .experience
 {
   flex:0 0 50%;
   max-width: 50%;
@@ -306,7 +302,6 @@ profile-photo .img{
 }
 .project-title p{
   color: black;
-  
 }
 .projects{
   display: flex;
@@ -314,7 +309,6 @@ profile-photo .img{
   flex-wrap: wrap;
 }
 .project{
-    /* padding: 30px 15px; */
     color: black;
     border-radius: 10px;
     width: 100%;
@@ -353,10 +347,7 @@ profile-photo .img{
     text-align: center;
   }
  
-
- /*------------------- Responsive Design on small screen -------------------*/
-
-/* Medium layout */
+/*------------------- Responsive Design on small screen -------------------*/
 @media only screen and (min-width:1000px) and (max-width:1200px){
   .container{
     width: 970px;
@@ -372,8 +363,6 @@ profile-photo .img{
     padding: 40px 0px;
   }
 }
-
-
 
 /* tablet layout */
 @media only screen and (min-width:768px) and (max-width:999px){
@@ -420,8 +409,7 @@ profile-photo .img{
     margin-bottom: 50px;
   }
 
-  .education-content .row .education,
-  .education-content .row .experience {
+  .education-content .row .education, .education-content .row .experience {
     flex-basis: 100%;
     max-width: 100%;
     margin-top: 30px;
