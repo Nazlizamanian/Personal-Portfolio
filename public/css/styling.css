@@ -2,7 +2,6 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  scroll-behavior:smooth;
   background-color: rgb(275,212,223);
   color: black;
 }
@@ -108,9 +107,9 @@ body{
 }
 
 .FirstElement .profile-photo{
-  width: 300px;
-  height:  300px;
-  border-radius: 50%;
+  width: 325px;
+  height:  325px;
+  border-radius: 10%;
   overflow: hidden;
   border: 15px solid pink;
   box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5)
@@ -118,7 +117,6 @@ body{
 profile-photo .img{
   height: 100%;
   width: 100%;
-  transition: 0.5s;
 }
 
 .profile-text{
