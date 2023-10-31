@@ -80,7 +80,6 @@ body{
   margin: 0 15px;
 }
 .header ul li a{
-  text-transform: capitalize;
   display: block;
 }
 .header ul li a.active{
@@ -179,16 +178,23 @@ profile-photo .img{
 .btn-group{
   margin: 40px 0;
 }
-.btn-group .btn{
-  color: #fff;
-  padding:12px 20px;
-  margin: 5px 0;
-  margin-right: 7px;
-  border-radius: 20px;
-  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
-}
+
 .btn.active{
   border-color: lightcoral;
+}
+.learn-more-button {
+  padding: 5px 10px;
+  background-color: pink;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 3px;
+  transition:  0.3s; 
+}
+
+.learn-more-button:hover {
+  background-color: rgb(275,212,223);
+  transform: scale(1.2);
 }
 
 
@@ -343,9 +349,9 @@ profile-photo .img{
     align-items: center;
     text-align: center;
   }
-  .social a i {
+.social a i {
     font-size: 38px;
-    transition: color 0.3s; 
+    transition:  0.3s; 
     padding: 2px;
 }
 
