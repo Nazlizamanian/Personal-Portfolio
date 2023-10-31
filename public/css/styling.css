@@ -190,7 +190,6 @@ profile-photo .img{
   color: rgb(16, 16, 210);
 } 
 
-
 /*---------------------------Education & Experience ---------------------------*/
 .education-content .row{
   display: flex;
@@ -341,7 +340,6 @@ profile-photo .img{
     flex-direction: column;
     align-items: center;
     text-align: center;
-
   }
 .social a i {
     font-size: 38px;
@@ -351,7 +349,7 @@ profile-photo .img{
 
 .social a i:hover {
   transform: scale(1.2);
-  }
+}
  
 /*------------------- Responsive Design on small screen -------------------*/
 @media only screen and (min-width:1000px) and (max-width:1200px){
