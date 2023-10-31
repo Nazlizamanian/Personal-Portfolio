@@ -137,7 +137,6 @@ profile-photo .img{
   color: black;
   font-size: 18px;
   margin-right: 10px;
-  transition: 0.5s;
 }
 
  /*---------------------------About---------------------------*/
@@ -161,11 +160,6 @@ profile-photo .img{
   color: lightcoral;
   font-size: 40px;
   line-height: 70px;
-}
-
-.about-content ul {
-  color:#fff;
-  text-align: justify;
 }
 
 .about-content ul li {
@@ -259,6 +253,7 @@ profile-photo .img{
   top: 0;
   background-color: #fff;  
 }
+/*Timeline circles*/
 .education-content .row .circle-dot{
   position: absolute;
   left: 0;
@@ -280,10 +275,9 @@ profile-photo .img{
   
 }
 .education-content .row .timeline-text{
-  line-height: 23px;
+  line-height: 1.6em;
   font-size: 17px;
   background-color: pink;
-  
 }
 
 /*---------------------------Projects---------------------------*/
@@ -348,10 +342,11 @@ profile-photo .img{
     flex-direction: column;
     align-items: center;
     text-align: center;
+
   }
 .social a i {
     font-size: 38px;
-    transition:  0.3s; 
+    transition: 0.3s; 
     padding: 2px;
 }
 
