@@ -398,9 +398,7 @@ profile-photo .img{
   .profile-text{
     width: 350px;
   }
-  .FirstElement .profile-text p{
-    text-align: justify;
-  }
+
   .about{
     flex-direction: column;
     flex-basis: 100%;
