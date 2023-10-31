@@ -178,18 +178,17 @@ profile-photo .img{
 }
 .learn-more-button {
   padding: 5px 10px;
-  background-color: pink;
+  background-color: rgb(275,212,223);
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 3px;
-  transition:  0.3s; 
+  transition: .3s;
 }
 
 .learn-more-button:hover {
-  background-color: rgb(275,212,223);
-  transform: scale(1.2);
-}
+  color: rgb(16, 16, 210);
+} 
 
 
 /*---------------------------Education & Experience ---------------------------*/
