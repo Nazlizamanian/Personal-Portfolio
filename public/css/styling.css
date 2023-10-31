@@ -20,7 +20,7 @@ img{
 body{
   font-family: Georgia;
   font-size:16px;
-  line-height:20px; 
+  line-height: 1.6em; 
   background-color: rgb(275,212,223);
 }
 #slash{
@@ -342,6 +342,15 @@ profile-photo .img{
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .social a i {
+    font-size: 38px;
+    transition: color 0.3s; 
+    padding: 2px;
+}
+
+.social a i:hover {
+  transform: scale(1.2);
   }
  
 /*------------------- Responsive Design on small screen -------------------*/
