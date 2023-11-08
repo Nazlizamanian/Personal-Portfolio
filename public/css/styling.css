@@ -183,7 +183,6 @@ profile-photo .img{
   border-radius: 5px;
   cursor: pointer;
   margin-top: 3px;
-  transition: .3s;
 }
 
 .learn-more-button:hover {
@@ -350,6 +349,15 @@ profile-photo .img{
 .social a i:hover {
   transform: scale(1.2);
 }
+#let {
+  transform: scale(1); /* Initial size */
+  transition: transform 0.3s;
+}
+
+#let:hover {
+  transform: scale(1.2); /* Scales uniformly to 1.2 times the size */
+}
+
  
 /*------------------- Responsive Design on small screen -------------------*/
 @media only screen and (min-width:1000px) and (max-width:1200px){
