@@ -431,3 +431,103 @@ profile-photo .img{
 
 }
 
+
+/* 
+
+.skill-area{
+  padding-top:5%;
+}
+
+.custom{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width:calc(100%-2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.section-header{
+text-align: center;
+margin-bottom: 60px;
+}
+.section-header h2{
+  font-size: 60px;
+  line-height: 40px;
+  font-style: italic;
+  font-family:'Brush Script MT';
+  margin-bottom: 20px;
+  font-weight: 1300;
+
+}
+.single-skill{
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.topic{
+
+}
+.title-area{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.bar{
+  position: absolute;
+  bottom: -.75rem;
+  height: .75rem;
+  background-color: pink;
+  border-radius: 10px;
+}
+.bar-1{
+  width: 75%;
+}
+.bar-2{
+  width: 70%;
+}
+.bar-3{
+  width: 65%;
+}
+.bar-4{
+  width: 60%;
+}
+.bar-5{
+  width: 60%;
+}
+.bar-6, .bar-7{
+  width: 100%;
+}
+.bar-8{
+  width: 65%;
+}
+.bar-9{
+  width: 55%;
+}
+.wrapper{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* @media screen and (min-width:786px){
+  .wrapper{
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
+/* @media screen and (min-width:768px){
+  section{
+    padding: 3rem 0 2rem;
+  }
+
+  .custom{
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */ */
