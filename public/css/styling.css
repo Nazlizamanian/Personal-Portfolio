@@ -358,11 +358,13 @@ profile-photo .img{
   transform: scale(1.2); /* Scales uniformly to 1.2 times the size */
 }
 
- 
 /*------------------- Responsive Design on small screen -------------------*/
 @media only screen and (min-width:1000px) and (max-width:1200px){
   .container{
     width: 970px;
+  }
+  .project-content{
+    margin-top: 100px;
   }
 }
 
@@ -381,6 +383,12 @@ profile-photo .img{
   .container{
     width: 750px;
   } 
+  .project-content{
+    margin-top: 260px;
+  }
+  .experience, .education-content{
+    margin-bottom: 200px;
+  }
 }  
 
 
@@ -432,7 +440,7 @@ profile-photo .img{
 }
 
 
-/* 
+
 
 .skill-area{
   padding-top:5%;
@@ -511,15 +519,20 @@ margin-bottom: 60px;
 .bar-9{
   width: 55%;
 }
-.wrapper{
+.wrapper {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* @media screen and (min-width:786px){
-  .wrapper{
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
+section{
+  padding: 3rem 0 2rem;
+}
+
+.custom{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 /* @media screen and (min-width:768px){
   section{
@@ -530,4 +543,4 @@ margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
   }
-} */ */
+} */ 
