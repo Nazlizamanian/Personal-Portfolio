@@ -1,6 +1,6 @@
 const typewriterText = document.querySelector(".typewriter");
 const phrases = [
-    "Hello I am Nazli,",
+    "Hello I'm Nazli,",
     "Hej jag heter Nazli",
     "Γεια σας είμαι η Nazli",
     "سلام من نازلی هستم"

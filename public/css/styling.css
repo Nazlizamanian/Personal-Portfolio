@@ -6,8 +6,8 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  background-color: #080808;
   color: #fff;
+
 }
 a{
   text-decoration: none ;
@@ -55,6 +55,15 @@ body{
     border-color: #333;
   }
 } */
+#start-text{
+  line-height: 10px;
+  text-transform: uppercase;
+  font-weight: 10;
+  font-family:"Roboto";
+  margin-bottom: 10px;
+  font-size: 65px;
+
+}
 
 #special{
   line-height: 40px;
@@ -62,12 +71,11 @@ body{
   font-weight: 10;
   font-family:"Roboto";
   margin-bottom: 20px;
-  font-weight: 1300;
 }
 #titles{
   font-family: 'Playfair Display';
   padding-bottom: 10px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .education #special, .experience #special {
@@ -79,7 +87,7 @@ body{
 }
 
 .header-area{
-  padding:20px 0;
+  padding:10px 0;
 }
 
 .header-area.sticky {
@@ -125,7 +133,7 @@ body{
   display: block;
   border-radius: 30%;
   background-color: #262626;
-  padding: 15px;
+  padding: 10px;
 }
 
 .header ul li a:hover{
@@ -141,19 +149,19 @@ body{
    display:flex;
    justify-content: space-around;
    align-items: center;
-   padding-top: 5rem; 
+   padding-top: 3rem; 
 } 
 
 .FirstElement.adjusted-padding {
-  padding-top: 40px; 
+  padding-top: 20px; 
 }
 
 .FirstElement .profile-photo{
-  width: 325px;
-  height:  335px;
+  width: 355px;
+  height:  365px;
   border-radius: 30%;
   overflow: hidden;
-  border: 15px solid #fff;
+  border: 10px solid #fff;
   box-shadow: 0 0 10px 2px #fff;
 }
 profile-photo .img{
@@ -186,20 +194,21 @@ profile-photo .img{
 
  /*---------------------------About---------------------------*/
 .about-area{
-  padding-top: 130px;
+  padding-top: 120px;
   background-color: #080808;
 }
 .about{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  background-color: #262626;
+  border-radius: 7px;
 }
 .about-content {
-  flex-basis: 90%;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  flex-basis: 80%;
+  padding-bottom: 30px;
+
 }
 .about-content h4{
   color: #fff;
@@ -207,11 +216,15 @@ profile-photo .img{
   line-height: 70px;
 }
 
-.about-content ul li {
+.about-content ul {
   list-style-type: disc;
   margin-bottom: 10px;
 }
-
+#about #special {
+  font-size: 55px;
+  text-align: center;
+  padding:20px 5px;
+}
 
 /*---------------------------Button---------------------------*/
 .btn-group{
