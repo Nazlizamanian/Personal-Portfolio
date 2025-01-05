@@ -156,11 +156,11 @@ body{
 }
 
 .FirstElement .profile-photo{
-  width: 355px;
-  height:  365px;
+  width: 345px;
+  height:  355px;
   border-radius: 30%;
   overflow: hidden;
-  border: 10px solid #fff;
+  border: 8px solid #fff;
   box-shadow: 0 0 10px 2px #fff;
 }
 profile-photo .img{
